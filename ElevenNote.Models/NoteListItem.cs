@@ -12,6 +12,9 @@ namespace ElevenNote.Models
         public int NoteId { get; set; }
         public string Title { get; set; }
 
+        [UIHint("Starred")] // This string here is important later in Views.Shared.DisplayTemplates
+        public bool IsStarred { get; set; }
+
         [Display(Name ="Created")]
         public DateTimeOffset CreatedUtc { get; set; }
 
