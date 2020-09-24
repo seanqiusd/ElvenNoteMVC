@@ -13,6 +13,7 @@ namespace ElevenNote.Models
         public string Title { get; set; }
 
         [UIHint("Starred")] // This string here is important later in Views.Shared.DisplayTemplates
+        [Display(Name ="Important")]
         public bool IsStarred { get; set; }
 
         [Display(Name ="Created")]
